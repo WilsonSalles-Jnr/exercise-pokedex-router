@@ -11,7 +11,7 @@ class Detalhes extends React.Component {
       <p>Type: {type}</p>
       <p>Average Weight: {value}</p>
       <p>Sumary: {sumary}</p>
-      {foundAt.map((cur)=> <img src={cur.map}/>)}
+      {foundAt.map((cur,i)=> <img src={cur.map} alt={`${cur.name} location ${i}`}/>)}
     </div>;
   }
 }
